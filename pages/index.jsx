@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+
+import { Navbar, About } from "../components";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -12,6 +14,10 @@ export default function Home() {
           content="Home Page Of The Al-Together Foundation."
         />
       </Head>
+
+      <div className={styles.container}>
+        <Navbar />
+      </div>
     </div>
   );
 }
