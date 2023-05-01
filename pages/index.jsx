@@ -15,7 +15,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className={styles.container}>
+      <div>
         <Navbar />
       </div>
     </div>
