@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .container {
   padding: 0;
   margin: 0;
@@ -18,18 +27,41 @@
       justify-content: space-between;
       align-items: center;
 
-      li {
+      .navbar__navlinks_link {
         padding: 0 1.2rem;
+        cursor: pointer;
 
         &:last-child {
           padding: 0.5rem 1.6rem;
           background: #52734d;
           a {
             color: #feffde;
+            &:hover {
+              color: #52734d;
+              transition: 0.3s all ease-in-out;
+            }
+          }
+          &:hover {
+            background: none;
+            border: 2px solid #52734d;
+            transition: 0.3s all ease-in-out;
           }
         }
-        &:hover {
-          cursor: pointer;
+        &:hover .circle {
+          display: block;
+          animation: fadeIn;
+          animation-duration: 1s;
+        }
+
+        .circle {
+          border-radius: 50%;
+          background-color: #2f412c;
+          width: 5px;
+          height: 5px;
+          position: relative;
+          left: 50%;
+          bottom: -2px;
+          display: none;
         }
       }
 

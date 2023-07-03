@@ -27,13 +27,9 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.navbar}>
         <div className={styles.navbar__logo_container}>
-          <Image
-            src="/logo.png"
-            // style={{ marginLeft: -100 }}
-            alt="logo"
-            width={200}
-            height={60}
-          />
+          <a href="/">
+            <Image src="/logo.png" alt="logo" width={200} height={60} />
+          </a>
         </div>
 
         <div className={styles.navbar__navlinks_container}>
