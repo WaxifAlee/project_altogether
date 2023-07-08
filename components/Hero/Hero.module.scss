@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+$inter-Font: "Inter", sans-serif;
+$leckerli-Font: "Leckerli One", cursive;
+
+$theme-white: #feffde;
+
+$theme-light-green: #ddffbc;
+
+$theme-green: #91c788;
+
+$theme-dark-green: #52734d;
+
+.container {
+  background-image: url("../../public/assets/header-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 81vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-position: center center;
+  background-position-y: calc(center - 70px);
+
+  .card_container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    color: $theme-white;
+    padding: 3rem 4rem;
+    position: relative;
+    bottom: 4vh;
+
+    h4 {
+      font-family: $leckerli-Font;
+      font-size: 20px;
+      font-weight: normal;
+      position: relative;
+      top: 30px;
+      left: 12px;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 24px;
+      padding: 2.5rem 4.5rem;
+      font-family: $inter-Font;
+      text-align: left;
+      position: relative;
+    }
+
+    a {
+      font-family: $inter-Font;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      color: $theme-white;
+      font-size: small;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  }
+}

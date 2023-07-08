@@ -1,0 +1,17 @@
+.footer {
+  background-color: #feffde;
+  color: #52734d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    border-bottom: 3px dotted;
+    color: #52734d;
+  }
+}
+
+.text {
+  font-size: 16px;
+}

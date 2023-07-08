@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$inter-Font: "Inter", sans-serif;
+$leckerli-Font: "Leckerli One", cursive;
+$poppins-Font: "Poppins", sans-serif;
+
+$theme-white: #feffde;
+
+$theme-light-green: #ddffbc;
+
+$theme-green: #91c788;
+
+$theme-dark-green: #52734d;
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.memberCardContainer {
+  width: 360px;
+  height: 580px;
+  border-radius: 16px;
+  background-color: $theme-white;
+  color: $theme-dark-green;
+  font-family: $poppins-Font;
+
+  opacity: 0;
+  animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+  transform: translate3d(0, -20px, 0);
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+  .imageContainer {
+    background: #48c7bc;
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.34);
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .infoContainer {
+    padding: 2rem;
+    position: relative;
+    bottom: 5rem;
+
+    h3 {
+      font-weight: 400;
+      font-size: 16px;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    quote {
+      font-size: x-large;
+      position: relative;
+      bottom: 12px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $theme-dark-green;
+      font-family: $inter-Font;
+      padding: 0.8rem 2rem;
+      position: relative;
+      top: 32px;
+      border-radius: 4px;
+      background-color: #52734d;
+      color: $theme-white;
+      //box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.34);
+
+      &:hover {
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.34);
+      }
+    }
+  }
+}

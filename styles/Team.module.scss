@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$inter-Font: "Inter", sans-serif;
+$leckerli-Font: "Leckerli One", cursive;
+$poppins-Font: "Poppins", sans-serif;
+
+$theme-white: #feffde;
+
+$theme-light-green: #ddffbc;
+
+$theme-green: #91c788;
+
+$theme-dark-green: #52734d;
+
+.container {
+  background-color: $theme-dark-green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: $theme-white;
+  font-family: $poppins-Font;
+
+  .textContainer {
+    h2 {
+      font-size: 40px;
+      border-top: 4px solid $theme-light-green;
+      border-bottom: 4px solid $theme-light-green;
+      letter-spacing: 4px;
+    }
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+
+    .card {
+      padding: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}
