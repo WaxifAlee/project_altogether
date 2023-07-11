@@ -39,7 +39,7 @@ const team = () => {
     "/../public/assets/eshalejaz.png",
     "Eshal Ejaz",
     "Funds Manager",
-    "My moral belief is that humanity was created to help humanity in the hour of need. If you are born to be a giver, play your role.",
+    "No one has ever become poor from giving. Spend on others and blessings will continue upon you.",
     "May, 2022",
     "+92 3334-7887667",
     "eshalawan012@gmail.com"
@@ -50,7 +50,7 @@ const team = () => {
     "Badar Mushtaq",
     "Distr. Manager",
     "My moral belief is that humanity was created to help humanity in the hour of need. If you are born to be a giver, play your role.",
-    "May, 2022",
+    "June, 2022",
     "+92 311-5499873",
     "wasifali719@yahoo.com"
   );

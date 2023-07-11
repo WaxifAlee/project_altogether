@@ -12,7 +12,7 @@ const Hero = () => {
           PEOPLE WHO GIVE <br /> AND <br /> PEOPLE WHO NEED 🤝
         </h2>
 
-        <a href="#" style={{ backgroundColor: "#52734d" }}>
+        <a href="#" className={styles.btnLeft}>
           DONATE AS LOW AS 100 PKR
         </a>
       </div>
@@ -23,6 +23,7 @@ const Hero = () => {
           backgroundColor: "white",
           height: "43vh",
         }}
+        className={styles.verticalLine}
       ></div>
 
       <div className={styles.card_container}>
@@ -37,7 +38,7 @@ const Hero = () => {
           PEOPLE WHO ARE <br /> WILLING <br /> TO MAKE AN IMPACT 🌎
         </h2>
 
-        <a href="#" style={{ backgroundColor: "#FEFFDE", color: "#7B936F" }}>
+        <a href="#" className={styles.btnRight}>
           VOLUNTEER AS A MEMBER
         </a>
       </div>

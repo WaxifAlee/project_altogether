@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
+      <Head lang="en">
         <title>Al-Together Community</title>
         <meta
           name="description"

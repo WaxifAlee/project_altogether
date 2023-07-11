@@ -12,6 +12,27 @@ $theme-green: #91c788;
 
 $theme-dark-green: #52734d;
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .verticalLine {
+    display: none;
+  }
+}
+
 .container {
   background-image: url("../../public/assets/header-bg-image.png");
   background-repeat: no-repeat;
@@ -20,6 +41,7 @@ $theme-dark-green: #52734d;
   display: flex;
   justify-content: center;
   justify-items: center;
+  flex-wrap: wrap;
   align-items: center;
   background-position: center center;
   background-position-y: calc(center - 70px);
@@ -33,6 +55,31 @@ $theme-dark-green: #52734d;
     padding: 3rem 4rem;
     position: relative;
     bottom: 4vh;
+    opacity: 0;
+    animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+    transform: translate3d(0, -20px, 0);
+
+    .btnLeft {
+      background-color: $theme-dark-green;
+      &:hover {
+        background-color: $theme-white;
+        color: $theme-dark-green;
+        transition: 0.3s all ease;
+        font-weight: bold;
+      }
+    }
+
+    .btnRight {
+      background-color: $theme-white;
+      color: $theme-dark-green;
+      font-weight: bold;
+      &:hover {
+        background-color: $theme-dark-green;
+        color: $theme-white;
+        transition: 0.3s all ease;
+        font-weight: bold;
+      }
+    }
 
     h4 {
       font-family: $leckerli-Font;
