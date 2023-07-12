@@ -52,10 +52,10 @@ const team = () => {
     pictureBadar,
     "Badar Mushtaq",
     "Distr. Manager",
-    "My moral belief is that humanity was created to help humanity in the hour of need. If you are born to be a giver, play your role.",
+    "No one is useless in this world who lightens the burdens of another. Alone we can do little, together we have no limits.",
     "June, 2022",
-    "+92 311-5499873",
-    "wasifali719@yahoo.com"
+    "+92 334-8844423",
+    "badar8424@gmail.com"
   );
 
   const members = [wasif, eshal, badar];

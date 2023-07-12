@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+$poppins-Font: "Poppins", sans-serif;
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -51,7 +53,7 @@
   justify-content: space-around;
   justify-items: center;
   align-items: center;
-  font-family: "Poppins";
+  font-family: $poppins-Font;
 
   .icons {
     display: none;
@@ -198,7 +200,7 @@
           a {
             text-decoration: none;
             color: #5f2c01;
-            font-family: "Poppins";
+            font-family: $poppins-Font;
             font-size: 14px;
           }
         }
