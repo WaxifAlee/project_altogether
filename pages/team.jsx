@@ -75,8 +75,8 @@ const team = () => {
 
         <div className={styles.cardsContainer}>
           {members.map((member, index) => (
-            <div className={styles.card}>
-              <MemberCard key={index} member={member} />
+            <div key={index} className={styles.card}>
+              <MemberCard member={member} />
             </div>
           ))}
         </div>

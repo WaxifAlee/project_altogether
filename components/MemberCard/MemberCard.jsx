@@ -20,9 +20,9 @@ const MemberCard = ({ member }) => {
         <h4>- {member.title} -</h4>
 
         <p>
-          <quote>
+          <i>
             <FaQuoteLeft />
-          </quote>
+          </i>
           {member.description}
         </p>
 
