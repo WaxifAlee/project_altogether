@@ -34,7 +34,7 @@ $theme-dark-green: #52734d;
 }
 
 .container {
-  background-image: url("../../public/assets/header-bg-image.png");
+  background-image: url("../../assets/header-bg-image.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 81vh;
@@ -52,7 +52,7 @@ $theme-dark-green: #52734d;
     justify-items: center;
     flex-direction: column;
     color: $theme-white;
-    padding: 3rem 4rem;
+    padding: 3rem 2rem;
     position: relative;
     bottom: 4vh;
     opacity: 0;

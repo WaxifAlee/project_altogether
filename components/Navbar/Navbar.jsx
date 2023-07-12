@@ -97,7 +97,14 @@ const Navbar = () => {
             {navLinks.map((link, index) => {
               return (
                 <li key={index} className={styles.navbar__miniNavBar_links}>
-                  <Link href={link === "home" ? "/" : `/${link}`}>
+                  <Link
+                    style={
+                      router.pathname === (link === "home" ? "/" : `/${link}`)
+                        ? { fontWeight: "bold" }
+                        : {}
+                    }
+                    href={link === "home" ? "/" : `/${link}`}
+                  >
                     {link.toUpperCase()}
                   </Link>
                 </li>

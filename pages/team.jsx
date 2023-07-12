@@ -3,6 +3,9 @@ import Head from "next/head";
 
 import styles from "../styles/Team.module.scss";
 import { Navbar, Footer, MemberCard } from "../components";
+import pictureEshal from "../assets/eshalejaz.png";
+import pictureWasif from "../assets/wasif.jpg";
+import pictureBadar from "../assets/badarmushtaq.jpeg";
 
 class Member {
   constructor(
@@ -26,7 +29,7 @@ class Member {
 
 const team = () => {
   const wasif = new Member(
-    "/../public/assets/wasif.jpg",
+    pictureWasif,
     "Wasif Ali",
     "Founder",
     "My moral belief is that humanity was created to help humanity in the hour of need. If you are born to be a giver, play your role.",
@@ -36,17 +39,17 @@ const team = () => {
   );
 
   const eshal = new Member(
-    "/../public/assets/eshalejaz.png",
+    pictureEshal,
     "Eshal Ejaz",
     "Funds Manager",
     "No one has ever become poor from giving. Spend on others and blessings will continue upon you.",
     "May, 2022",
-    "+92 3334-7887667",
+    "+92 334-7887667",
     "eshalawan012@gmail.com"
   );
 
   const badar = new Member(
-    "/../public/assets/badarmushtaq.jpeg  ",
+    pictureBadar,
     "Badar Mushtaq",
     "Distr. Manager",
     "My moral belief is that humanity was created to help humanity in the hour of need. If you are born to be a giver, play your role.",

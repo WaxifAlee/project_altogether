@@ -14,6 +14,21 @@ $theme-green: #91c788;
 
 $theme-dark-green: #52734d;
 
+@keyframes colorChange {
+  0% {
+    border-top: 4px solid $theme-light-green;
+    border-bottom: 4px solid $theme-light-green;
+  }
+  50% {
+    border-top: 4px solid $theme-green;
+    border-bottom: 4px solid $theme-green;
+  }
+  100% {
+    border-top: 4px solid $theme-light-green;
+    border-bottom: 4px solid $theme-light-green;
+  }
+}
+
 .container {
   background-color: $theme-dark-green;
   min-height: 100vh;
@@ -27,9 +42,9 @@ $theme-dark-green: #52734d;
   .textContainer {
     h2 {
       font-size: 40px;
-      border-top: 4px solid $theme-light-green;
-      border-bottom: 4px solid $theme-light-green;
       letter-spacing: 4px;
+      animation: colorChange 2s ease 0s infinite forwards;
+      border-radius: 5px;
     }
   }
 

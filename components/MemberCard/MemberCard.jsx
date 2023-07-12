@@ -5,13 +5,14 @@ import { FaPhone, FaEnvelope, FaQuoteLeft } from "react-icons/fa";
 
 const MemberCard = ({ member }) => {
   return (
-    <div className={styles.memberCardContainer}>
+    <div className={`${styles.memberCardContainer}`}>
       <div className={styles.imageContainer}>
         <Image
           src={member.displayPicture}
           alt="User Image"
           width={120}
           height={120}
+          priority={true}
         />
       </div>
 
