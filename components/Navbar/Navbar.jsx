@@ -38,9 +38,9 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.navbar}>
         <div className={styles.navbar__logo_container}>
-          <a href="/">
+          <Link href="/">
             <Image src="/logo.png" alt="logo" width={200} height={60} />
-          </a>
+          </Link>
         </div>
 
         <div className={styles.navbar__navlinks_container}>
