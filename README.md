@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Al-Together
 
-## Getting Started
+## Project Description
 
-First, run the development server:
+Al-Together is a charity organization founded by Wasif Ali, and his two friends from university, dedicated to positively impacting the lives of those in need. Our mission is to provide support and assistance to underprivileged individuals and communities through the generous contributions of our donors.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The Al-Together project is a web platform built using React and Next.js. It serves as the online presence for our organization, allowing visitors to learn more about our initiatives, team members, and ways to contribute. The website showcases the work we do, and the impact we have made, and provides a seamless experience for visitors to get involved.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- **Detailed Organization Information:** Gain insights into the goals, vision, and values of our organization.
+- **Team Member Profiles:** Get to know our dedicated team members, including Wasif Ali, Eshal Ejaz, and Badar Mushtaq.
+- **Donation Options:** Explore various ways to contribute, whether through regular or one-time contributions.
+- **Contact and Support:** Easily reach out to us for inquiries, collaboration opportunities, or to seek assistance.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Technologies Used
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- React
+- Next.js
+- HTML
+- SCSS
+- JavaScript ES6
 
-## Learn More
+## Get Involved
 
-To learn more about Next.js, take a look at the following resources:
+We believe that together, we can make a difference. If you are passionate about our cause and interested in contributing your skills and expertise, we welcome you to join us in developing this project. Here's how you can get involved:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Fork the Repository:** Start by forking this repository to your GitHub account.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. **Clone the Repository:** Clone the forked repository to your local development environment.
 
-## Deploy on Vercel
+3. **Install Dependencies:** Use npm or yarn to install the project dependencies.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Explore the Codebase:** Please take some time to familiarize yourself with the project structure and existing code.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. **Pick an Issue:** Check the issue tracker for any open issues or feature requests that align with your interests and skills.
+
+6. **Work on the Issue:** Once you've selected an issue, create a new branch and start working on the solution.
+
+7. **Commit and Push:** Regularly commit your changes and push them to your forked repository.
+
+8. **Submit a Pull Request:** When you're ready, submit a pull request from your branch to the main repository. Provide a detailed description of the changes you made and any relevant information.
+
+We appreciate your contribution and look forward to collaborating with you to further enhance the Al-Together project.
+
+## Contact Us
+
+If you have any questions, or suggestions, or would like to connect with our team, please feel free to reach out to us:
+
+- Email: wasifali719@yahoo.com
+- Twitter: [@AlTogetherCharity](https://twitter.com/AlTogetherCharity)
+- Instagram: [@altogethercharity](https://www.instagram.com/altogethercharity/)
+- Facebook: [Al-Together](https://www.facebook.com/AlTogetherCharity/)
+
+Thank you for your interest in Al-Together. Together, we can create a brighter future for those in need.
