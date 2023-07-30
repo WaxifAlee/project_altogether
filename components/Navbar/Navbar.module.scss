@@ -41,6 +41,7 @@ $poppins-Font: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  box-shadow: 6px 0px 6px #000;
 }
 
 .navbar__miniNavBar {
@@ -135,14 +136,13 @@ $poppins-Font: "Poppins", sans-serif;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .navbar__logo_container {
-      //background-color: pink;
       flex: 1;
     }
     .icons {

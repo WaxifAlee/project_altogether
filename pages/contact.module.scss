@@ -1,0 +1,38 @@
+.contactPage {
+  position: relative;
+  background-color: rgb(80, 232, 80);
+
+  h2 {
+    color: rgb(28, 28, 28);
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 1.8rem;
+  }
+}
+
+.pageTitle {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+
+  .formContainer {
+    background: #fff;
+    width: 60%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.485);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formContainer {
+    width: 20%;
+  }
+}
