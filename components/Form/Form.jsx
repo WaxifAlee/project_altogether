@@ -42,21 +42,31 @@ const Form = () => {
         <label htmlFor="from_name">
           Name <sup>*</sup>
         </label>
-        <input placeholder="Name" required type="text" name="from_name" />
+        <input placeholder="John Smith" required type="text" name="from_name" />
       </div>
 
       <div>
         <label htmlFor="from_email">
           E-mail <sup>*</sup>
         </label>
-        <input placeholder="E-mail" required type="text" name="from_email" />
+        <input
+          placeholder="john@example.com"
+          required
+          type="text"
+          name="from_email"
+        />
       </div>
 
       <div>
         <label htmlFor="subject">
           Subject <sup>*</sup>
         </label>
-        <input placeholder="Subject" required type="text" name="subject" />
+        <input
+          placeholder="I want to donate"
+          required
+          type="text"
+          name="subject"
+        />
       </div>
 
       <div>
@@ -85,6 +95,8 @@ const Form = () => {
         value="Send Message"
         className={style.submit}
       />
+      <br />
+      <br />
     </form>
   );
 };
