@@ -47,6 +47,7 @@ const contact = () => {
             <div>
               <Image
                 src={contactIllustration}
+                priority={false}
                 width={520}
                 height={520}
                 alt="Contact Us"
@@ -57,8 +58,9 @@ const contact = () => {
               <h2>- Contact Us -</h2>
               <br />
 
-              {contactCardsData.map((card) => (
+              {contactCardsData.map((card, index) => (
                 <motion.div
+                  key={index}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1 }}
