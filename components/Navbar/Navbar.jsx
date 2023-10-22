@@ -31,7 +31,6 @@ const Navbar = () => {
   ];
 
   const [navVisibility, setNavVisibility] = useState(false);
-  const [active, setActive] = useState("");
   const router = useRouter();
 
   return (
@@ -39,7 +38,13 @@ const Navbar = () => {
       <div className={styles.navbar}>
         <div className={styles.navbar__logo_container}>
           <Link href="/">
-            <Image src="/logo.png" alt="logo" width={200} height={60} />
+            <Image
+              src="/logo.png"
+              priority
+              alt="logo"
+              width={200}
+              height={60}
+            />
           </Link>
         </div>
 

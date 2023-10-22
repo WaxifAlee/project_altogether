@@ -42,7 +42,12 @@ const Form = () => {
         <label htmlFor="from_name">
           Name <sup>*</sup>
         </label>
-        <input placeholder="John Smith" required type="text" name="from_name" />
+        <input
+          placeholder="Muhammad Ali"
+          required
+          type="text"
+          name="from_name"
+        />
       </div>
 
       <div>
@@ -50,7 +55,7 @@ const Form = () => {
           E-mail <sup>*</sup>
         </label>
         <input
-          placeholder="john@example.com"
+          placeholder="muhammad.ali@example.com"
           required
           type="text"
           name="from_email"

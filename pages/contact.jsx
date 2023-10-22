@@ -3,7 +3,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaInstagram } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobile, faMailReply } from "@fortawesome/free-solid-svg-icons";
+import { faMobile, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 
 import { Form, Navbar, Footer } from "../components";
 import styles from "./contact.module.scss";
@@ -13,15 +13,24 @@ const contact = () => {
   const contactCardsData = [
     {
       icon: <FontAwesomeIcon icon={faMobile} />,
-      text: "+92 311 549 9873",
+      text: "+92 - 311 549 9873",
+      fun: () => {
+        window.location.href = `tel:${"+92 311 549 9873"}`; // Use the actual phone number here
+      },
     },
     {
-      icon: <FontAwesomeIcon icon={faMailReply} />,
+      icon: <FontAwesomeIcon icon={faMailBulk} />,
       text: "altogethercharity@gmail.com",
+      fun: () => {
+        window.location.href = `mailto:${"altogethercharity@gmail.com"}`; // Use the actual email address here
+      },
     },
     {
       icon: <FaInstagram />,
       text: "instagram.com/altogether/",
+      fun: () => {
+        window.location.href = `https://${"instagram.com/altogether/"}`; // Use the actual Instagram handle here
+      },
     },
   ];
 
@@ -56,22 +65,17 @@ const contact = () => {
 
             <div className={styles.text}>
               <h2>- Contact Us -</h2>
-              <br />
 
-              {contactCardsData.map((card, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  className={styles.contactCard}
-                >
-                  {card.icon}
-                  <p>{card.text}</p>
-                </motion.div>
-              ))}
+              <div className={styles.cards}>
+                {contactCardsData.map((card, index) => (
+                  <div key={index} className={styles.card} onClick={card.fun}>
+                    <span>{card.icon}</span> <span>{card.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
+
           <div className={styles.formContainer}>
             <br />
             <h1>- Fill The Form -</h1>
