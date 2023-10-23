@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaInstagram } from "react-icons/fa";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobile, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { FaInstagram, FaPhone, FaMailBulk } from "react-icons/fa";
+
 
 import { Form, Navbar, Footer } from "../components";
 import styles from "./contact.module.scss";
@@ -12,17 +11,10 @@ import contactIllustration from "../assets/contactimg.jpg";
 const contact = () => {
   const contactCardsData = [
     {
-      icon: <FontAwesomeIcon icon={faMobile} />,
+      icon: <FaPhone />,
       text: "+92 - 311 549 9873",
       fun: () => {
         window.location.href = `tel:${"+92 311 549 9873"}`; // Use the actual phone number here
-      },
-    },
-    {
-      icon: <FontAwesomeIcon icon={faMailBulk} />,
-      text: "altogethercharity@gmail.com",
-      fun: () => {
-        window.location.href = `mailto:${"altogethercharity@gmail.com"}`; // Use the actual email address here
       },
     },
     {
@@ -30,6 +22,13 @@ const contact = () => {
       text: "instagram.com/altogether/",
       fun: () => {
         window.location.href = `https://${"instagram.com/altogether/"}`; // Use the actual Instagram handle here
+      },
+    },
+    {
+      icon: <FaMailBulk />,
+      text: "altogethercharity@gmail.com",
+      fun: () => {
+        window.location.href = `mailto:${"altogethercharity@gmail.com"}`; // Use the actual email address here
       },
     },
   ];
@@ -60,7 +59,7 @@ const contact = () => {
                 width={520}
                 height={520}
                 alt="Contact Us"
-              />
+              /> 
             </div>
 
             <div className={styles.text}>
@@ -68,7 +67,7 @@ const contact = () => {
 
               <div className={styles.cards}>
                 {contactCardsData.map((card, index) => (
-                  <div key={index} className={styles.card} onClick={card.fun}>
+                  <div className={styles.card} onClick={card.fun}>
                     <span>{card.icon}</span> <span>{card.text}</span>
                   </div>
                 ))}
