@@ -6,7 +6,10 @@ import { FaAngleDoubleDown } from "react-icons/fa";
 import styles from "../styles/Donate.module.scss";
 
 const Donate = () => {
-  const message = [<h2>Hi!</h2>, <p>Thank You For Your Kind Concern {"<3"}</p>];
+  const message = [
+    <h2 key={1}>Hi!</h2>,
+    <p key={2}>Thank You For Your Kind Concern {"<3"}</p>,
+  ];
   const [messageIndex, setMessageIndex] = useState(0);
 
   useEffect(() => {
