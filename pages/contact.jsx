@@ -5,7 +5,7 @@ import { FaInstagram, FaPhone, FaMailBulk } from "react-icons/fa";
 
 
 import { Form, Navbar, Footer } from "../components";
-import styles from "./contact.module.scss";
+import styles from "../styles/Contact.module.scss";
 import contactIllustration from "../assets/contactimg.jpg";
 
 const contact = () => {

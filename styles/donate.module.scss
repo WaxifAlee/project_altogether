@@ -1,8 +1,69 @@
+@keyframes backgroundAnimation{
+    0% {
+      background-color: #52734d;
+    }
+    50% {
+      background-color: #7db176;
+    }
+    100% {
+        background-color: #52734d;
+    }
+}
+
+@keyframes fadeInFirst {
+    0%{
+        opacity: 0;
+    } 50%{
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    } 100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 0;
+    } 100%{
+        opacity: 1;
+    }
+}
+
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
     height: 83vh;
     background-color: #52734d;
+    animation: backgroundAnimation 4s ease-in-out 0s infinite;
 
+    div{
+        h2{
+            font-size: 8rem;
+            color: #252525;
+            font-family: "Poppins", sans-serif;
+            animation: fadeInFirst 5500ms ease-in-out;
+        }
+    
+        p{
+            font-size: 2rem;
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+    }
+
+    svg{
+        font-size: 4rem;
+        position: relative;
+    }
 }

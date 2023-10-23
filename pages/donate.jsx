@@ -1,9 +1,23 @@
+import { useState, useEffect } from "react"
 import Head from "next/head"
 
 import {Navbar, Footer} from "../components"
-import styles from "../styles/donate.module.scss"
+import { FaAngleDoubleDown } from "react-icons/fa"
+import styles from "../styles/Donate.module.scss"
 
 const donate = () => {
+
+    const message = [<h2>Hi!</h2>, <p>Thank You For Your Kind Concern {"<3"}</p>];
+    const [messageIndex, setMessageIndex] = useState(0);
+
+    useEffect( () => {
+        const timer = setTimeout( () => {
+            setMessageIndex(1);
+        }, 5000);
+
+        return () => clearTimeout(timer);
+    }, [messageIndex] )
+
   return (
     <>
 
@@ -18,7 +32,12 @@ const donate = () => {
         <Navbar />
         
         <div className={styles.container}>
-
+                <div>
+                    { message[messageIndex] }
+                </div>
+                <div>
+                    <FaAngleDoubleDown />
+                </div>
         </div>
 
         <Footer />
