@@ -3,7 +3,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaInstagram, FaPhone, FaMailBulk } from "react-icons/fa";
 
-
 import { Form, Navbar, Footer } from "../components";
 import styles from "../styles/Contact.module.scss";
 import contactIllustration from "../assets/contactimg.jpg";
@@ -59,7 +58,7 @@ const contact = () => {
                 width={520}
                 height={520}
                 alt="Contact Us"
-              /> 
+              />
             </div>
 
             <div className={styles.text}>
@@ -67,7 +66,7 @@ const contact = () => {
 
               <div className={styles.cards}>
                 {contactCardsData.map((card, index) => (
-                  <div className={styles.card} onClick={card.fun}>
+                  <div key={index} className={styles.card} onClick={card.fun}>
                     <span>{card.icon}</span> <span>{card.text}</span>
                   </div>
                 ))}
