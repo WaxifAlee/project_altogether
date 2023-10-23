@@ -5,7 +5,7 @@ import { Navbar, Footer } from "../components";
 import { FaAngleDoubleDown } from "react-icons/fa";
 import styles from "../styles/Donate.module.scss";
 
-const donate = () => {
+const Donate = () => {
   const message = [<h2>Hi!</h2>, <p>Thank You For Your Kind Concern {"<3"}</p>];
   const [messageIndex, setMessageIndex] = useState(0);
 
@@ -41,4 +41,4 @@ const donate = () => {
   );
 };
 
-export default donate;
+export default Donate;
